@@ -1,0 +1,413 @@
+html{
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #bcbcbc;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    background: url('https://mig.pics/uploads/posts/2022-08/1660352223_5-mykaleidoscope-ru-p-interer-tsvetochnogo-salona-dizain-krasivo-5.png') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #fff;
+    color: #4caf50;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.catalog {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.catalog h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    gap: 20px; /* отступы между карточками */
+    margin-top: 20px;
+    margin-left: 153px;
+}
+
+.product-item {
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.product-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.product-image .image-hover {
+    opacity: 0;
+}
+
+.product-item:hover .image-hover {
+    opacity: 1;
+}
+
+.product-item:hover .image-default {
+    opacity: 0;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.p1 {
+    font-size: 16px;
+    color: #777;
+}
+
+
+.about, .contact {
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-size: 14px;
+    color: #333;
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .footer-container h3 {
+    font-size: 16px;
+    color: #555;
+  }
+  .footer-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-container ul li {
+    margin-bottom: 8px;
+  }
+  .footer-container a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  .footer-container a:hover {
+    text-decoration: underline;
+  }
+  .footer-contact p, .footer-social p, .footer-about p, .footer-services ul, .footer-info ul, .footer-payment ul {
+    margin-bottom: 10px;
+  }
+  .footer-copyright {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    margin-top: 20px;
+  }
+
+h2{
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Контейнер для карточек */
+.card-container {
+    display: flex;               /* Выравнивание карточек в строку */
+    justify-content: space-between; /* Равномерное распределение карточек */
+    gap: 20px;                   /* Отступы между карточками */
+    flex-wrap: wrap;             /* Карточки обворачиваются при необходимости */
+    margin: 20px;
+}
+
+/* Стили для каждой карточки */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    width: 300px;               /* Устанавливаем фиксированную ширину для карточки */
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 80px;                /* Небольшой размер изображения */
+    height: 80px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-left: 15px;          /* Отступ между картинкой и текстом */
+}
+
+.card-content {
+    flex: 1;                    /* Текст займет оставшееся пространство */
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container1 {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url(https://images.wallpaperscraft.com/image/single/flowers_lines_patterns_83468_3840x2160.jpg);
+}
+
+.faq {
+    background-color: rgb(15, 14, 14);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.faq:hover {
+    background-color: #ffffff;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #4CAF50;
+    margin-top: 10px;
+}
+
+.faq.active + .answer {
+    display: block;
+} h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.faq:hover {
+    background-color: #f0f0f0;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #4CAF50;
+    margin-top: 10px;
+}
+
+.faq.active + .answer {
+    display: block;
+}
+
+.se {
+    text-align: center;
+    color: rgb(255, 241, 241);
+}
+
+.promo-text {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.form-group input[type="email"]:focus {
+    border-color: #fbfbfb;
+    outline: none;
+}
+
+.checkbox-group {
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #04d026;
+}
+
+.small-text {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 15px;
+}
+
+.thanks-message {
+    display: none;
+    text-align: center;
+}
+
+.thanks-message p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.thanks-message .btn-return {
+    background-color: #007bff;
+    margin-top: 20px;
+}
+
+.thanks-message .btn-return:hover {
+    background-color: #0056b3;
+}
